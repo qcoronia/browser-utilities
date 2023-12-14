@@ -1,0 +1,64 @@
+#build-assist {
+	position: absolute;
+	display: flex;
+	gap: 5px;
+	z-index: 9999;
+	top: -30px;
+	right: 450px;
+	padding: 5px;
+	background: white;
+	box-shadow: rgb(14 14 14 / 45%) 0px 3px 8px 1px;
+	transition: all 0.5s;
+}
+
+#build-assist:focus,
+#build-assist:focus-within,
+#build-assist:hover {
+	top: 0px;
+}
+
+#build-assist > button.handle {
+    background-color: white;
+    position: absolute;
+    bottom: -7px;
+    right: 10px;
+    font-size: xx-small;
+    height: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.auto-release {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.auto-release-label {
+	font-size: 8px;
+}
+
+.checkbox-slider {
+	padding: 1px;
+	height: 100%;
+	transition: all 0.5s;
+	transition-timing-function: ease-out;
+	background-color: #B9C2C9;
+}
+
+.auto-release.active .checkbox-slider {
+	background-color: #2196F3;
+}
+
+.checkbox-slider-handle {
+	background: white;
+	width: 50%;
+	height: 100%;
+	margin-left: 0%;
+	transition: all 0.2s;
+	transition-timing-function: ease-out;
+}
+
+.auto-release.active .checkbox-slider-handle {
+	margin-left: 50%;
+}
